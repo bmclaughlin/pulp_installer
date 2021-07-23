@@ -69,6 +69,9 @@ Role Variables
 * `pulp_extra_groups`: Optional. A list of additional group names that the `pulp_user` should
   be added to. This is site-specific and defaults to nothing.
 * `pulp_use_system_wide_pkgs` Use python system-wide packages. Defaults to "false".
+* ``  
+* `pulp_log_dir` Directory where audit log will be stored.  Defaults to "/var/lib/pulp/logs"
+* `pulp_log_file` Log file where audit logs will be added.  Defaults to "pulp_audit_log.log"
 * `pulp_remote_user_environ_name` Optional. Set the `REMOTE_USER_ENVIRON_NAME` setting for Pulp.
   This variable will be set as the value of `CONTENT_HOST` as the base path to build content URLs.
 * `pulp_install_object_storage`: The preferred object storage. Defaults to `filesystem`.
